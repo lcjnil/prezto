@@ -32,7 +32,14 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'history-substring-search' \
+  'git' \
+  'autosuggestions' \
+  'command-not-found' \
+  'pacman' \
+  'docker' \
+  'node'
 
 #
 # Autosuggestions
@@ -46,13 +53,13 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-#zstyle ':prezto:module:editor' ps-context 'yes'
+zstyle ':prezto:module:editor' ps-context 'yes'
 
 #
 # Git
@@ -72,6 +79,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # History Substring Search
 #
 
+zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
+
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
 
@@ -86,7 +95,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yaourt'
 
 #
 # Prompt
@@ -95,7 +104,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'powerlevel9k'
 
 #
 # Ruby

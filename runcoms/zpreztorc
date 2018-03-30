@@ -44,7 +44,9 @@ zstyle ':prezto:load' pmodule \
   'docker' \
   'node' \
   'fasd' \
-  'syntax-highlighting'
+  'syntax-highlighting' \
+  'osx' \
+  'node'
 
 #
 # Autosuggestions
